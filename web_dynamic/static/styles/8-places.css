@@ -95,3 +95,81 @@
 .description {
 	text-align: left;
 }
+
+
+.places .amenities {
+	margin-top: 40px;
+	width: 100%;
+}
+
+.places .amenities h2,
+.reviews h2 {
+	font-size: 16px;
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 10px;
+}
+
+.places .amenities ul,
+.reviews ul {
+	list-style: none;
+	padding-inline-start: 0;
+	margin: 0px;
+}
+
+.places .amenities ul li {
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+	text-align: left;
+	padding: 5px 5px 5px 35px;
+}
+
+li.tv {
+	background-image: url("../images/icon_tv.png");
+}
+
+li.wifi {
+	background-image: url("../images/icon_wifi.png");
+}
+
+li.pets {
+	background-image: url("../images/icon_pets.png");
+}
+
+.reviews {
+	margin-top: 40px;
+}
+
+.reviews h2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.reviews li {
+	text-align: left;
+	padding: 0px;
+}
+
+.reviews li h3 {
+	font-size: 14px;
+	margin: 0px;
+}
+
+.reviews li p {
+	font-size: 12px;
+	margin: 0px;
+	margin-bottom: 15px;
+}
+
+.review_toggle {
+	font-size: 14px;
+	border: 0.1px solid #ccc;
+	padding: 7px;
+	cursor: pointer;
+	user-select: none;
+	width: 40px;
+	border-radius: 10px;
+	text-align: center;
+}
