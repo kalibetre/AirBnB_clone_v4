@@ -18,10 +18,23 @@ $('document').ready(() => {
         else $('#api_status').removeClass('available');
     });
 
+    fetch_places(places, [], [], []);
+
+    $('button').click(() => {
+        fetch_places(places, [], [], Object.keys(amenity_filters));
+    });
+});
+
+function fetch_places(places, states, cities, amenities) {
+    places.empty();
     $.ajax({
         url: 'http://0.0.0.0:5001/api/v1/places_search/',
         type: 'POST',
-        data: JSON.stringify({}),
+        data: JSON.stringify({
+            states: states,
+            cities: cities,
+            amenities: amenities,
+        }),
         contentType: 'application/json',
         dataType: 'json',
         success: (data) => {
@@ -62,4 +75,4 @@ $('document').ready(() => {
             });
         },
     });
-});
+}
