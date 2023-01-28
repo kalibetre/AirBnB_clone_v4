@@ -78,21 +78,20 @@
 
 .popover h2 {
 	font-size: 16px;
-	margin-bottom: 0px;
+	margin: 5px 0px;
 }
 
-.popover ul {
-	width: 100%;
-	list-style-type: none;
-	padding-inline-start: 15px;
+input[type='checkbox'] {
+	margin-right: 10px;
 }
 
-.popover li {
+.input-row {
 	padding: 3px;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 }
 
-.popover li input[type='checkbox'] {
-	margin-right: 10px;
+.multi-input-row {
+	display: flex;
+	flex-direction: column;
 }
