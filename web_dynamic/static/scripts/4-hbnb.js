@@ -64,7 +64,7 @@ function fetch_places(places, states, cities, amenities) {
                     </article>
                 `);
                 $.get(
-                    `http://0.0.0.1:5001/api/v1/users/${place['user_id']}`,
+                    `http://0.0.0.0:5001/api/v1/users/${place['user_id']}`,
                     (user) => {
                         $(`#owner_${place['id']}`).append(`
                             <strong>Owner</strong>: ${user['first_name']}
